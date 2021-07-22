@@ -1,12 +1,14 @@
 <!--
- * @Descripttion: home
+ * @Descripttion: 
  * @Author: LongWeiYi
- * @Date: 2021-07-15 17:36:50
+ * @Date: 2021-07-21 14:01:50
  * @LastEditors: LWY😊
- * @LastEditTime: 2021-07-22 10:13:47
+ * @LastEditTime: 2021-07-21 16:18:01
 -->
 <template>
-  <div class="home">Home</div>
+  <div class="test">
+    <button @click="mogonClick">mongo</button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -18,20 +20,22 @@ export default defineComponent({
   setup() {
     const store = useStore()
     onMounted(() => {
-      setMenuStyle(store, 'rgba(246, 118, 86, 0.92)', '#F1F1F1')
+      setMenuStyle(store, "#eee", "#000")
     })
-    return {}
+    const mogonClick = () => {
+      console.log('mogonClick')
+    }
+
+    return {
+      mogonClick
+    }
   }
 })
 </script>
 
 <style scoped lang="less">
-.home {
-  width: 100%;
-  height: 100vh;
-  background: url("../assets/image/hero-bg.png") no-repeat;
-  background-size: cover;
-  background-position: bottom;
+.test {
   padding-top: 77px;
+  background-color: #eeee;
 }
 </style>
