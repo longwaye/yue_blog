@@ -3,12 +3,12 @@
  * @Author: LongWeiYi
  * @Date: 2021-07-15 17:59:43
  * @LastEditors: LWY😊
- * @LastEditTime: 2021-07-21 18:05:24
+ * @LastEditTime: 2021-07-22 10:44:31
 -->
 <template>
   <div class="header-wrap">
     <div class="title">
-      <span>Yue</span>
+      <span>Woyoyo</span>
     </div>
     <!-- 头部按钮 -->
     <div :class="['custom_menu-btn', clasName]">
